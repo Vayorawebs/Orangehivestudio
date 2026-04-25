@@ -1,6 +1,7 @@
 .directors {
-  padding: 10rem 2rem;
-  background-color: var(--light-bg);
+  padding: 10rem 5%;
+  background-color: #080808;
+  color: #fff;
 }
 
 .directors-grid {
@@ -75,7 +76,7 @@
 .director-info h3 {
   font-size: 1.8rem;
   font-weight: 900;
-  color: black;
+  color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
