@@ -1,0 +1,102 @@
+.services-v3 {
+  background: #000;
+  color: #fff;
+}
+
+.section-header {
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-header .label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--primary-orange);
+}
+
+.section-title-big {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.highlight-text {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  color: transparent;
+}
+
+.section-desc-v3 {
+  font-size: 1.25rem;
+  color: var(--text-grey);
+  max-width: 500px;
+  line-height: 1.4;
+}
+
+.services-list-v3 {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  align-items: center;
+  padding: 3rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.service-row:hover {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.service-row:hover .row-arrow {
+  transform: rotate(45deg);
+  color: var(--primary-orange);
+}
+
+.service-row:hover h3 {
+  color: var(--primary-orange);
+}
+
+.row-id {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.row-content h3 {
+  font-size: clamp(1.5rem, 3vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.row-tag {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-grey);
+  letter-spacing: 0.1em;
+}
+
+.row-arrow {
+  transition: all 0.4s ease;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .service-row {
+    grid-template-columns: 50px 1fr;
+    padding: 2.5rem 0;
+  }
+  .row-arrow {
+    display: none;
+  }
+}

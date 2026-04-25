@@ -1,0 +1,89 @@
+.directors {
+  padding: 10rem 2rem;
+  background-color: var(--light-bg);
+}
+
+.directors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.director-card {
+  text-align: left;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.director-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+  filter: grayscale(100%);
+  transition: all 0.6s ease;
+}
+
+.director-card:hover .director-image {
+  filter: grayscale(0%);
+  border-color: var(--primary-orange);
+}
+
+.director-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.director-card:hover .director-image img {
+  transform: scale(1.1);
+}
+
+.social-links {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  background: black;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.director-card:hover .social-links {
+  bottom: 0;
+}
+
+.social-links a {
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.social-links a:hover {
+  color: var(--primary-orange);
+}
+
+.director-info h3 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.director-info span {
+  color: var(--primary-orange);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

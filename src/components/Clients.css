@@ -1,0 +1,39 @@
+.clients-marquee {
+  width: 100%;
+  background-color: #000;
+  padding: 30px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation: scrollText 30s linear infinite;
+}
+
+.marquee-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 950;
+  font-size: 5.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 60px;
+  line-height: 1;
+}
+
+.marquee-text:nth-child(even) {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--primary-orange);
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+  
